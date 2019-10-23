@@ -1,0 +1,24 @@
+// Question 3 exercises 6.3
+// Calculate the number of kilometres per gallons the car delivered.
+#include <iostream>
+using namespace std;
+void distance(double dis=0.0,double litre=0.0,double km=0.0);
+const double gallons=0.264179;
+
+int main()
+{
+  double litre=0.0,dis=0.0,km=0.0;
+  cout<< "Please input your number of litresof petrol consumed by car:"<<litre<<endl;
+  cin>>litre;
+  cout<< "Please input your number of kilometers you travelled:"<<km<<endl;
+  cin>>km;
+  distance(dis,litre,km);
+  return 0;
+}
+
+void distance(double dis,double litre,double km)
+{
+    dis=km/(litre*gallons);
+  cout<< "Number of kilometres per gallon the car delivered is:"<<dis<<endl;
+    
+}
